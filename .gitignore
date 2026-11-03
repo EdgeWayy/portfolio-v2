@@ -1,0 +1,29 @@
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+*.sqlite
+*.db
+
+# Private notes and local configuration
+docs-internal/
+.impeccable/
+
+# Local tooling: only the site build and the dev server are public
+tools/*
+!tools/build.mjs
+!tools/serve.mjs
+
+# Unlinked test page
+acid-test.html
+
+# Noise
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
